@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treasure Map</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+  <!-- Верхняя панель -->
+  <nav class="navbar">
+    <div class="container">
+      <button id="theme-toggle">🌙 Темная тема</button>
+    </div>
+  </nav>
+
+  <!-- Основной контент -->
+  <main class="container">
+    <input 
+      type="text" 
+      id="search-input" 
+      placeholder="Введите текст записки..." 
+    />
+    <div id="results-container"></div>
+  </main>
+
+  <!-- Модальное окно -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-title"></h2>
+      <div id="modal-images"></div>
+      <button id="modal-close">Закрыть</button>
+    </div>
+  </div>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    &copy; 2023 Карта Кладов. Все права защищены.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
